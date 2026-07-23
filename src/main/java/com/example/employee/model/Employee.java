@@ -15,8 +15,10 @@ public class Employee {
     @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "email")
+
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
+    
     public long getId() {
         return id;
     }
